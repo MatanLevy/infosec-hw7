@@ -1,0 +1,4 @@
+similar to q1,the goal was to run a code instead of trying to guess username and password.
+this is done by using pickle properties from the documentation here : https://docs.python.org/2/library/pickle.html
+the main idea is that reduce can return a callable object, so using this syntax will make us again running the code 
+that prints 'hacked' instead of using username and password.

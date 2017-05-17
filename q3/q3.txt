@@ -1,0 +1,4 @@
+this time we provide empty username and password.
+we can see that in run.py we compare the username and password by the length of username and password in data.
+so we providing an empty username and password,it will always be equal(empty strings are always equals).
+so in this case we pass the check and can run any command we want.

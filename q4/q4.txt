@@ -1,0 +1,10 @@
+the logical problem here is understanding JSON format.
+on the one hand,in validate_script the check of json is correct by using [] opreator.
+on the other hand, in execute we take the command from regular expression.
+
+so if we give a json as an input that has command as a key with 'echo cool' and the good signutare,it will pass the verify check.
+but if we put in value of an unimportant key(ourcase - q4_solution ) the pattern of "command": <value> so in the execute_script it will find it and run the <value> instead of runing the value of key command in JSON!
+
+so,the diffrence between check in verify and execute is the problem.
+
+important note !!!!!! -> I dont know why but it works for me only when 'command' key is defined before 'q4-solution' key so I hope it will not be diffrent in the checker computer and machine.beacuse it really weird.

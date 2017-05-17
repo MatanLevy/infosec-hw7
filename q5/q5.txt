@@ -1,0 +1,9 @@
+The idea here is to uset the fact that verify run very slow,more then 10 seconds for sure so we can first 
+send to verify a good signuatre for 'echo cool' taken from the example.json,so this part will pass with success.
+
+at the time verify is cheking the good signuatre,I run another thread that overwrite the data this time to run our command -> echo hacked,
+so that when run.py gets to execute_script it againg opening the file for reading and read our command.
+
+so,this integration between the secure part of verify which works a lot of time and, and execution part that again open the file(so we can change it meanwhile) will make this problem happen. 
+
+the usage is run : python q5.py
